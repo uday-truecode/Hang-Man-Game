@@ -3,7 +3,7 @@
 
 #This is a guessing game.
 
-#This programme generates random word.
+#This program generates random word.
 
 #In order to win, you have to guess the letter present in that word.
 
