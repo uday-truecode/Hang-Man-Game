@@ -1,6 +1,7 @@
 
 
 import random
+import wordlist
 
 logo = ''' 
  _                                             
@@ -69,15 +70,18 @@ stages = ['''
       |
 =========
 ''']
+
+
 print(logo)
+
 end_of_game = False
-word_list = ["ardvark", "baboon", "camel"]
+word_list = wordlist.wlist
 chosen_word = random.choice(word_list)
 word_length = len(chosen_word)
 lives=6
 
 
-
+print(f'Pssst, the solution is {chosen_word}.')
 
 
 display = []
@@ -107,14 +111,15 @@ while not end_of_game:
         print(f"This is your last chance. Think again :)")
       elif lives==0:
         print(""""          
-            XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+             
+    XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
   XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
  XXXXXXXXXXXXXXXXXX         XXXXXXXX
 XXXXXXXXXXXXXXXX              XXXXXXX
 XXXXXXXXXXXXX                   XXXXX
- XXX     _________ _________     XXX      GMAE
-  XX    I  _xxxxx I xxxxx_  I    XX        OVER
- ( X----I         I         I----X )           
+ XXX     _________ _________     XXX      GAME
+  XX    I  _xxxxx I xxxxx_  I    XX       OVER
+ ( X----I         I         I----X )          
 ( +I    I      00 I 00      I    I+ )
  ( I    I    __0  I  0__    I    I )
   (I    I______ /   \_______I    I)
@@ -125,7 +130,7 @@ XXXXXXXXXXXXX                   XXXXX
        \        \___,        /
          \                 /
           |\             /|
-          |  \_________/  |  """)  
+          |  \_________/  | """)  
     
     
 
@@ -140,6 +145,14 @@ XXXXXXXXXXXXX                   XXXXX
         end_of_game= True
         print("You lose.")
 
+
+
+
+
+
+
+
+#by Uday Sannigrahi
     
       
     
