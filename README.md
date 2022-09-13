@@ -1,4 +1,4 @@
-# Hnag Man Game
+# Hang Man Game
 
 
 #This is a guessing game.
