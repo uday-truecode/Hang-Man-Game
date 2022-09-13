@@ -2,6 +2,17 @@
 
 import random
 
+logo = ''' 
+ _                                             
+| |                                            
+| |__   __ _ _ __   __ _ _ __ ___   __ _ _ __  
+| '_ \ / _` | '_ \ / _` | '_ ` _ \ / _` | '_ \ 
+| | | | (_| | | | | (_| | | | | | | (_| | | | |
+|_| |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
+                    __/ |                      
+                   |___/    '''
+
+
 stages = ['''
   +---+
   |   |
@@ -58,7 +69,7 @@ stages = ['''
       |
 =========
 ''']
-
+print(logo)
 end_of_game = False
 word_list = ["ardvark", "baboon", "camel"]
 chosen_word = random.choice(word_list)
@@ -66,7 +77,7 @@ word_length = len(chosen_word)
 lives=6
 
 
-print(f'Pssst, the solution is {chosen_word}.')
+
 
 
 display = []
@@ -96,14 +107,25 @@ while not end_of_game:
         print(f"This is your last chance. Think again :)")
       elif lives==0:
         print(""""          
-           , * * * ,                    
-       , *           *,                  
-      *____      ____  *,             
-     *, |__0__| |__0__|  , Sorry              
-     *,                  ,            
-     *,     ========    ,               
-      *,               *             
-        *>>>>>><<<<<<<<  """)  
+            XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+ XXXXXXXXXXXXXXXXXX         XXXXXXXX
+XXXXXXXXXXXXXXXX              XXXXXXX
+XXXXXXXXXXXXX                   XXXXX
+ XXX     _________ _________     XXX      GMAE
+  XX    I  _xxxxx I xxxxx_  I    XX        OVER
+ ( X----I         I         I----X )           
+( +I    I      00 I 00      I    I+ )
+ ( I    I    __0  I  0__    I    I )
+  (I    I______ /   \_______I    I)
+   I           ( ___ )           I
+   I    _  :::::::::::::::  _    i
+    \    \___ ::::::::: ___/    /
+     \_      \_________/      _/
+       \        \___,        /
+         \                 /
+          |\             /|
+          |  \_________/  |  """)  
     
     
 
